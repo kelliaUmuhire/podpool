@@ -1,6 +1,7 @@
 <template>
   <div class="mt-14 mx-5">
     <div class="font-semibold text-xl text-white">Trending</div>
+    <div class="flex flex-row flex-wrap"></div>
   </div>
   <!-- <Footer /> -->
 </template>
