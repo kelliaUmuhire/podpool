@@ -7,8 +7,13 @@
       ><img src="../assets/images/PodPool.png" alt="logo" class="w-18 h-5"
     /></router-link>
     <div class="other flex space-x-4">
-      <img src="../assets/images/search.png" alt="search" class="w-5 h-5" />
-      <img src="../assets/images/user.png" alt="user" class="w-5 h-5" />
+      <router-link to="/search"
+        ><img src="../assets/images/search.png" alt="search" class="w-5 h-5"
+      /></router-link>
+
+      <router-link to="/login"
+        ><img src="../assets/images/user.png" alt="user" class="w-5 h-5"
+      /></router-link>
       <img src="../assets/images/web.png" alt="web" class="w-5 h-5" />
     </div>
   </div>

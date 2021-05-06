@@ -42,7 +42,7 @@ export default {
 
 <style>
 .search {
-  background-color: #1a2328;
+  background-color: #1a2328b6;
 }
 hr {
   border-top: 0.2px solid #a8dadc34;

@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Discover from "../views/Discover.vue";
+import Login from "../views/Auth/Login.vue";
 
 const routes = [
   {
@@ -12,6 +13,23 @@ const routes = [
     path: "/discover",
     name: "Discover",
     component: Discover,
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: Login,
+  },
+  {
+    path: "/register",
+    name: "Register",
+    component: () =>
+      import(/* webpackChunkName: "register" */ "../views/Auth/Register.vue"),
+  },
+  {
+    path: "/search",
+    name: "Search",
+    component: () =>
+      import(/* webpackChunkName: "register" */ "../views/Search.vue"),
   },
   // {
   //   path: '/about',
