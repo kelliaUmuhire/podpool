@@ -22,6 +22,19 @@
           alt="arrow-down"
           class="w-3 h-3 mt-3 ml-2"
         />
+        <div class="select">
+          <!-- <select
+            name="genres"
+            class="outline:none text-xs w-32 bg-transparent mt-2.5 text-white"
+          >
+            <option value="---" class="text-white">Select category</option>
+            <option value="Biography">Biography</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Coding">Coding</option>
+            <option value="Food">Food</option>
+          </select> -->
+          <!-- <v-select :options="['Canada', 'United States']"></v-select> -->
+        </div>
       </div>
       <button
         class="text-white absolute focuse:outline-none text-xs py-3 px-7 border border-transparent rounded-xl"
@@ -31,12 +44,17 @@
     </div>
     <div class="mt-28 text-white ml-10">
       <div class="text-lg">Popular searches</div>
+      <!-- <v-select
+        :options="options"
+        label="country"
+        :reduce="(country) => country.code"
+      /> -->
       <div class="flex flex-col">
         <div class="flex flex-row w-11/12 ml-2 mt-10">
           <img
             src="https://source.unsplash.com/random"
             alt="imagee"
-            class="w-36 h-32 mt-1"
+            class="w-32 h-32 mt-1 bg-cover"
           />
           <div class="ml-5 w-4/5">
             <div class="text-sm">How it is done</div>
@@ -67,6 +85,11 @@ import Footer from "../components/Footer";
 export default {
   name: "Search",
   components: { Footer },
+  data() {
+    return {
+      options: [{ country: "Canada", code: "CA" }],
+    };
+  },
 };
 </script>
 
