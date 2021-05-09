@@ -1,144 +1,38 @@
 <template>
-  <div class="mt-20 ml-10 ">
-    <div class="font-semibold text-xl text-white">Trending</div>
-    <div class="flex flex-row flex-wrap mt-5 relative">
-      <div
-        class="flex flex-row h-48  relative item border border-transparent rounded-2xl mr-7 mt-8"
+  <trending />
+
+  <!-- <Footer /> -->
+  <div class="mt-14 ml-10 ">
+    <div class="font-semibold text-xl text-white">Hot genres</div>
+  </div>
+  <div class="mt-14 ml-10">
+    <div class="font-semibold text-xl text-white">Most played</div>
+  </div>
+  <div class="mt-14 ml-10">
+    <div class="font-semibold text-xl text-white">Want a recommendation?</div>
+    <div class="text-white text-sm mt-2">Sign up for the recommendation!</div>
+    <div class="border rounded-xl reco h-12 w-3/6 mt-8 relative">
+      <input
+        type="text"
+        class="bg-transparent h-8 p-4 w-4/5 text-sm mt-1.5 ml-2 focus:outline-none text-white"
+        placeholder="Enter your email "
+      />
+      <button
+        class="text-white absolute focuse:outline-none text-xs py-3 px-7 border border-transparent rounded-xl top-0.5 right-0.5"
       >
-        <img
-          src="https://source.unsplash.com/random"
-          alt="random"
-          class="item-img border border-transparent rounded-l-lg"
-        />
-        <div
-          class="text-white font-normal h-full border border-transparent item-content rounded-r-lg w-3/5 p-5"
-        >
-          <div class="title mb-2">The lights on</div>
-          <div class="content text-xs">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec
-            ligula sagittis nisl suscipit tincidunt
-          </div>
-          <div class="tags flex flex-row flex-wrap mt-2">
-            <div class="border rounded-md text-xs py-0.5 px-1.5">sci-fi</div>
-          </div>
-          <div class="mt-2">
-            <span class="font-semibold text-xs">Episodes: </span
-            ><span class="font-normal text-xs">500</span>
-          </div>
-          <img
-            src="../assets/images/rplay.svg"
-            alt="play"
-            class="absolute right-5 play h-8 w-9"
-          />
-        </div>
-      </div>
-      <!-- another -->
-      <div
-        class="flex flex-row h-48  relative item border border-transparent rounded-2xl mr-7 mt-8"
-      >
-        <img
-          src="https://source.unsplash.com/random"
-          alt="random"
-          class="item-img border border-transparent rounded-l-lg"
-        />
-        <div
-          class="text-white font-normal h-full border border-transparent item-content rounded-r-lg w-3/5 p-5"
-        >
-          <div class="title mb-2">The lights on</div>
-          <div class="content text-xs">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec
-            ligula sagittis nisl suscipit tincidunt
-          </div>
-          <div class="tags flex flex-row flex-wrap mt-2">
-            <div class="border rounded-md text-xs py-0.5 px-1.5">sci-fi</div>
-          </div>
-          <div class="mt-2">
-            <span class="font-semibold text-xs">Episodes: </span
-            ><span class="font-normal text-xs">500</span>
-          </div>
-          <img
-            src="../assets/images/rplay.svg"
-            alt="play"
-            class="absolute right-5 play h-8 w-9"
-          />
-        </div>
-      </div>
-      <!-- end -->
-      <!-- another -->
-      <div
-        class="flex flex-row h-48  relative item border border-transparent rounded-2xl mr-7 mt-8"
-      >
-        <img
-          src="https://source.unsplash.com/random"
-          alt="random"
-          class="item-img border border-transparent rounded-l-lg"
-        />
-        <div
-          class="text-white font-normal h-full border border-transparent item-content rounded-r-lg w-3/5 p-5"
-        >
-          <div class="title mb-2">The lights on</div>
-          <div class="content text-xs">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec
-            ligula sagittis nisl suscipit tincidunt
-          </div>
-          <div class="tags flex flex-row flex-wrap mt-2">
-            <div class="border rounded-md text-xs py-0.5 px-1.5">sci-fi</div>
-          </div>
-          <div class="mt-2">
-            <span class="font-semibold text-xs">Episodes: </span
-            ><span class="font-normal text-xs">500</span>
-          </div>
-          <img
-            src="../assets/images/rplay.svg"
-            alt="play"
-            class="absolute right-5 play h-8 w-9"
-          />
-        </div>
-      </div>
-      <!-- end -->
-      <!-- another -->
-      <div
-        class="flex flex-row h-48  relative item border border-transparent rounded-2xl mr-7 mt-8"
-      >
-        <img
-          src="https://source.unsplash.com/random"
-          alt="random"
-          class="item-img border border-transparent rounded-l-lg"
-        />
-        <div
-          class="text-white font-normal h-full border border-transparent item-content rounded-r-lg w-3/5 p-5"
-        >
-          <div class="title mb-2">The lights on</div>
-          <div class="content text-xs">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec
-            ligula sagittis nisl suscipit tincidunt
-          </div>
-          <div class="tags flex flex-row flex-wrap mt-2">
-            <div class="border rounded-md text-xs py-0.5 px-1.5">sci-fi</div>
-          </div>
-          <div class="mt-2">
-            <span class="font-semibold text-xs">Episodes: </span
-            ><span class="font-normal text-xs">500</span>
-          </div>
-          <img
-            src="../assets/images/rplay.svg"
-            alt="play"
-            class="absolute right-5 play h-8 w-9"
-          />
-        </div>
-      </div>
-      <!-- end -->
+        Sign Up
+      </button>
     </div>
   </div>
   <hr class="w-full mt-16" />
-  <Footer />
 </template>
 
 <script>
 import Footer from "../components/Footer.vue";
+import Trending from "../components/Trending.vue";
 export default {
   name: "Discover",
-  components: { Footer },
+  components: { Footer, Trending },
 };
 </script>
 
@@ -162,5 +56,17 @@ export default {
 }
 .play {
   top: 9.4rem;
+}
+
+.reco {
+  border-color: #37474f9c;
+}
+
+.reco button {
+  background-color: #9fe1e3;
+}
+
+.reco input::placeholder {
+  color: #6f6f6f;
 }
 </style>
