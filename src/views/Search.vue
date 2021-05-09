@@ -51,11 +51,12 @@
       /> -->
       <div class="flex flex-col">
         <div class="flex flex-row w-11/12 ml-2 mt-10">
-          <img
+          <!-- <img
             src="https://source.unsplash.com/random"
             alt="imagee"
             class="w-32 h-32 mt-1 bg-cover"
-          />
+          /> -->
+          <div class="item__bg item__img"></div>
           <div class="ml-5 w-4/5">
             <div class="text-sm">How it is done</div>
             <div class="text-xs text-gray-500">By Trevor noah</div>
@@ -110,5 +111,15 @@ export default {
 
 .search-box .category {
   left: 56%;
+}
+
+.item__img {
+  height: 8rem;
+  width: 8rem;
+}
+
+.item__bg {
+  background-image: url("https://source.unsplash.com/random");
+  background-size: cover;
 }
 </style>
