@@ -80,6 +80,7 @@
   </div>
 
   <hr class="w-full mt-16" />
+  <Footer />
 </template>
 
 <script>

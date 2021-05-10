@@ -10,13 +10,15 @@
           alt="random"
           class="item-img border border-transparent rounded-l-lg"
         /> -->
-        <div class="item-bg item-img">
+
+        <div class="item-bg item-img" @click="$router.push('/podcast/1')">
           <!-- <img
             src="https://source.unsplash.com/random"
             alt="random"
             class="item-img border border-transparent rounded-l-lg"
           /> -->
         </div>
+
         <div
           class="text-white font-normal h-full border border-transparent item-content rounded-r-lg w-3/5 p-5"
         >
@@ -40,6 +42,7 @@
         </div>
       </div>
       <!-- another -->
+
       <div
         class="flex flex-row h-48  relative item border border-transparent rounded-2xl mr-7 mt-8"
       >
