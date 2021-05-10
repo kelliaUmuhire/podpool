@@ -148,6 +148,7 @@ export default {
 .cont {
   background-image: url("https://source.unsplash.com/random");
   background-size: cover;
+  border-radius: 5px;
 }
 
 /* .imagee {

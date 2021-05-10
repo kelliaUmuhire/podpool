@@ -121,5 +121,11 @@ export default {
 .item__bg {
   background-image: url("https://source.unsplash.com/random");
   background-size: cover;
+  border-radius: 5px;
+}
+
+.tags div {
+  background-color: #1d3557;
+  border-color: #1d3557;
 }
 </style>

@@ -111,8 +111,10 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec
             ligula sagittis nisl suscipit tincidunt
           </div>
-          <div class="tags flex flex-row flex-wrap mt-2">
-            <div class="border rounded-md text-xs py-0.5 px-1.5">sci-fi</div>
+          <div class="flex flex-row flex-wrap mt-2">
+            <div class="border rounded-md text-xs py-0.5 px-1.5 tag__div">
+              sci-fi
+            </div>
           </div>
           <div class="mt-2">
             <span class="font-semibold text-xs">Episodes: </span
@@ -139,8 +141,8 @@ export default {
 };
 </script>
 
-<style scoped>
-.tags div {
+<style>
+.tag__div {
   background-color: #1d3557;
   border-color: #1d3557;
 }
