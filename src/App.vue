@@ -4,15 +4,17 @@
     <router-link to="/about">About</router-link>
   </div> -->
   <!-- <home /> -->
-  <navbar />
+  <!-- <navbar /> -->
+  <auth-navbar />
   <router-view />
 </template>
 
 <script>
+import AuthNavbar from "./components/AuthNavbar.vue";
 import Home from "./components/Home.vue";
 import Navbar from "./components/Navbar.vue";
 export default {
-  components: { Home, Navbar },
+  components: { Home, Navbar, AuthNavbar },
 };
 </script>
 <style>
