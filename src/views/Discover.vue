@@ -72,7 +72,7 @@
         placeholder="Enter your email "
       />
       <button
-        class="text-white absolute focuse:outline-none text-xs py-3 px-7 border border-transparent rounded-xl top-0.5 right-0.5"
+        class="text-white absolute focuse:outline-none text-xs py-3 px-7 border border-transparent rounded-xl top-0.5 right-0.5 font-bold"
       >
         Sign Up
       </button>
