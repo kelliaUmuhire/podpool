@@ -49,7 +49,7 @@
         label="country"
         :reduce="(country) => country.code"
       /> -->
-      <div class="flex flex-col">
+      <div class="flex flex-col space-y-10">
         <div class="flex flex-row w-11/12 ml-2 mt-10">
           <!-- <img
             src="https://source.unsplash.com/random"

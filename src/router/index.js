@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Discover from "../views/Discover.vue";
 import Login from "../views/Auth/Login.vue";
+import MPodcasts from "../views/MPodcasts.vue";
 
 const routes = [
   {
@@ -48,6 +49,11 @@ const routes = [
     name: "Create",
     component: () =>
       import(/* webpackChunkName: "register" */ "../views/CreatePodcast.vue"),
+  },
+  {
+    path: "/mypods",
+    name: "Podcast",
+    component: MPodcasts,
   },
   // {
   //   path: '/about',

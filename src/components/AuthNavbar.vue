@@ -18,7 +18,7 @@
           class="w-9 h-10 profile -mt-2"
       /></router-link>
       <img src="../assets/images/web.png" alt="web" class="w-5 h-5" />
-      <div class="absolute dropdown text-white text-sm py-3 top-16 hidden">
+      <div class="absolute dropdown text-white text-sm py-3 top-16">
         <div class="py-2 px-5 border-b">My podcasts</div>
         <div class="py-2 px-5 border-b">Profile</div>
         <div class="py-2 px-5">Log out</div>
