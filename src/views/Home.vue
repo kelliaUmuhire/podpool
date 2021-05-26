@@ -5,10 +5,10 @@
       alt="bgimage"
       class="w-3/5 h-3/5"
     />
-    <div class="text-white text-4xl font-bold leading-relaxed mt-32">
+    <div class="text-white text-2xl font-bold leading-relaxed mt-32">
       <div>Listen to your favourite podcast, share, stream and download.</div>
       <div class="mt-20">
-        <div class="text-2xl font-semibold">Search now.</div>
+        <div class="text-xl font-semibold">Search now.</div>
         <div
           class="border border-transparent rounded-full search h-12 w-4/5 flex mt-3"
         >

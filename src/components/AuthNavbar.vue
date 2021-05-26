@@ -6,7 +6,7 @@
     <router-link to="/"
       ><img src="../assets/images/PodPool.png" alt="logo" class="w-18 h-5"
     /></router-link>
-    <div class="other flex space-x-4">
+    <div class="other flex space-x-6">
       <img src="../assets/images/bell.svg" alt="search" class="w-5 h-5" />
       <router-link to="/search"
         ><img src="../assets/images/search.png" alt="search" class="w-5 h-5"
