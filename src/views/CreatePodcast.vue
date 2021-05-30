@@ -1,5 +1,8 @@
 <template>
-  <div class="mt-28 flex flex-col justify-center items-center text-white mb-10">
+  <div
+    class="mt-28 flex flex-col justify-center items-center text-white mb-10"
+    :class="modal ? 'filter blur-sm' : ''"
+  >
     <div class="font-bold text-xl">Create podcast.</div>
     <div
       class="input-container border rounded-xl relative text-sm font-light px-4 py-3 mt-16"
@@ -12,6 +15,8 @@
     </div>
     <div
       class="input-container border rounded-xl relative text-sm font-light px-4 py-3 mt-10"
+      v-on:@blur="console.log('ssss')"
+      tabindex="0"
     >
       <textarea
         name=""
@@ -33,7 +38,9 @@
         alt="password"
         class="w-4 h-4 absolute left-5 top-3.5"
       />
-      <div class="pl-12">New episode</div>
+      <div class="pl-12 cursor-pointer" @click="modal = !modal">
+        New episode
+      </div>
     </div>
     <div class="font-bold text-lg relative text-left tag__h mt-10">
       Tags
@@ -62,6 +69,47 @@
       </button>
     </div>
   </div>
+  <div
+    class="absolute popup top-24 flex flex-col text-white w-4/12 left-96 rounded pl-10 pb-14"
+    :class="modal ? 'block' : 'hidden'"
+  >
+    <div
+      class="input-container input_epi border rounded-lg relative text-sm font-light px-4 py-2 mt-16"
+    >
+      <input
+        type="text"
+        placeholder="Enter episode name"
+        class="flex-1 bg-transparent w-4/5"
+      />
+    </div>
+    <div
+      class="input-container input_epi border rounded-xl relative text-sm font-light px-4 py-2 mt-8"
+    >
+      <textarea
+        name=""
+        id=""
+        cols="30"
+        rows="10"
+        class="flex-1 bg-transparent w-full"
+        placeholder="Enter episode info"
+      ></textarea>
+    </div>
+    <div
+      class="input-container input_epi_ border rounded-lg relative text-sm font-light py-2 mt-4"
+    >
+      <img
+        src="../assets/images/upload.svg"
+        alt="Upload"
+        class="w-4 h-4 absolute left-3.5 top-2.5"
+      />
+      <div class="pl-10">Upload</div>
+    </div>
+    <button
+      class="text-white focuse:outline-none text-xs py-3 px-2 w-24 create__epi border border-transparent rounded-xl mt-20 font-bold"
+    >
+      Create
+    </button>
+  </div>
   <hr class="w-full mt-16" />
   <Footer />
 </template>
@@ -71,6 +119,11 @@ import Footer from "../components/Footer";
 export default {
   components: { Footer },
   name: "Create",
+  data() {
+    return {
+      modal: false,
+    };
+  },
 };
 </script>
 
@@ -78,6 +131,10 @@ export default {
 .input-container {
   border-color: #1d3557;
   width: 45%;
+}
+
+.input_epi {
+  width: 90% !important;
 }
 
 .s-button {
@@ -102,5 +159,15 @@ export default {
 }
 .tag__t {
   margin-right: 27.5rem;
+}
+
+.popup {
+  background-color: #0a101a;
+}
+.input_epi_ {
+  width: 30% !important;
+}
+.create__epi {
+  background-color: #1d3557;
 }
 </style>
