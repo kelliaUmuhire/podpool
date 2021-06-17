@@ -19,7 +19,7 @@
           />
           <input
             type="text"
-            class="search h-8 p-4 w-4/5 text-sm mt-1 ml-2 focus:outline-none"
+            class="bg-transparent h-8 p-4 w-4/5 text-sm mt-1 ml-2 focus:outline-none"
             placeholder="Search podcasts "
           />
         </div>
