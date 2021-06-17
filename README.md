@@ -1,5 +1,5 @@
 # poodpool
-
+Stream and share podcasts.
 ## Project setup
 
 ```
